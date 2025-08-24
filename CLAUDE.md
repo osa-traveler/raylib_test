@@ -9,10 +9,10 @@ This is a Raylib-cs (C#) game development project featuring a reusable game libr
 ## Key Architecture
 
 ### Project Structure
-- **RaylibTest/** - Main C# project using .NET 8.0 and Raylib-cs 7.0.1
+- **Root directory** - Main C# project using .NET 8.0 and Raylib-cs 7.0.1
 - **libosa/** - Shared game development library with core systems
-- **p5_sample_project/** - Original p5.js implementation for reference
-- **raylib/** - Complete raylib C library source (not used directly by C# project)
+- **RaylibTest/raylib/** - Complete raylib C library source (reference only)
+- **p5_sample_project/** - Original p5.js implementation for reference (excluded from git)
 
 ### libosa Library Architecture
 The libosa library follows a component-based architecture:
@@ -36,13 +36,13 @@ The libosa library follows a component-based architecture:
 ### Building and Running
 ```bash
 # Build the project
-dotnet build RaylibTest/RaylibTest.csproj
+dotnet build RaylibTest.csproj
 
 # Run the main application (interactive demo selector)
-dotnet run --project RaylibTest/RaylibTest.csproj
+dotnet run
 
 # Run in release mode
-dotnet run --project RaylibTest/RaylibTest.csproj --configuration Release
+dotnet run --configuration Release
 ```
 
 ### Development Workflow

@@ -6,7 +6,8 @@
       "Bash(dotnet build)",
       "Bash(dotnet --version)",
       "Bash(git rm:*)",
-      "Bash(git ls-tree:*)"
+      "Bash(git ls-tree:*)",
+      "Bash(git add:*)"
     ],
     "deny": []
   }
