@@ -12,8 +12,9 @@ class Program
         Console.WriteLine("1. Hello World デモ");
         Console.WriteLine("2. バウンシングボール デモ");
         Console.WriteLine("3. パーティクルシステム デモ (libosa)");
+        Console.WriteLine("4. オセロゲーム デモ (libosa)");
         Console.WriteLine();
-        Console.Write("実行したいデモを選択してください (1, 2, または 3): ");
+        Console.Write("実行したいデモを選択してください (1, 2, 3, または 4): ");
         
         string input = Console.ReadLine() ?? "1";
         
@@ -24,6 +25,9 @@ class Program
                 break;
             case "3":
                 ParticleApp.RunParticleDemo();
+                break;
+            case "4":
+                OthelloApp.RunOthelloDemo();
                 break;
             default:
                 RunHelloWorldDemo();
