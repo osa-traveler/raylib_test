@@ -33,4 +33,4 @@ raylib/
 dotnet-install.sh
 
 # p5.js sample (reference only)
-p5_sample_project/
+p5_sample_project/p5_sample_project/
